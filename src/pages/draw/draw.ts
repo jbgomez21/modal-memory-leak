@@ -12,7 +12,6 @@ import { Utils } from '../../utils/utils';
 export class DrawPage implements OnInit {
   //canvas
   @ViewChild('canvas') public canvasElement: ElementRef;
-  raster: any;
   scope: any;
 
   constructor(public viewController: ViewController) {
@@ -28,7 +27,6 @@ export class DrawPage implements OnInit {
           raster.fitBounds(paper.view.bounds);
       }
     });
-
   }
 
   close() {
