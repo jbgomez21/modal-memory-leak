@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>
+          Modal PoC
+      </ion-title>
+      <ion-buttons start>
+          <button ion-button icon-only (click)="close()">
+              <ion-icon name="close-circle"></ion-icon>
+          </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="box">
+    <canvas #canvas resize ></canvas>
+  </div>
+</ion-content>
